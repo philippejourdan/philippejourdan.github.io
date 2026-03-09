@@ -13,8 +13,18 @@
 </head>
 <body>
 
+<header>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <nav id="nav">
+    <a href="index.html" class="active">Web Portfolio</a>
+    <a href="web3-area.html" target="_blank">Web3 Area</a>
+    <a href="recruitment-insights.html" target="_blank">Recruitment Insights</a>
+  </nav>
+  <div class="status"><div class="dot"></div>Open to opportunities</div>
+</header>
+
 <div class="background-grid"></div>
-<header class="hero">
+<section class="hero">
     <div class="hero-container">
 
 <div class="profile-swap" aria-label="Profile photo hover swap">
@@ -40,13 +50,12 @@
            15+ years structuring and scaling tech talent acquisition across Software, Cloud/DevOps, and emerging Blockchain ecosystems.
         </p>
   
-        <a href="assets/CV_PJ.pdf" class="btn" download="Philippe_Jourdan_Technology_Recruiter_CV_2026.pdf">
-  Download PDF CV</a>
+        <a href="assets/PJ_CV.pdf" class="btn" download="Philippe_Jourdan_CV.pdf" type="application/pdf">Download PDF CV </a>
     </div>
-</header>
+</section>
 
 <section class="section">
-  <h3 class="section-title">Technical Skills</h3>
+  <h3 class="section-title">// Technical Skills</h3>
 
   <div class="skills-grid skills-grid-2x2">
 
@@ -73,7 +82,7 @@
 
 
 <section class="section">
-    <h3 class="section-title">Experience</h3>
+    <h3 class="section-title">// Career Log</h3>
 
     <div class="timeline">
         <div class="timeline-item">
@@ -109,7 +118,7 @@
 </section>
 
 <section class="section">
-    <h3 class="section-title">Education & Certifications</h3>
+    <h3 class="section-title">// Education & Certifications</h3>
     <div class="skills-grid">
         <div class="skill-card">
             <h4>Consulting Blockchain Diploma</h4>
@@ -128,7 +137,7 @@
 
 <section class="results-final">
 
-  <h3 class="section-title">Recent Impact & Measurable Results</h3>
+  <h3 class="section-title"> // Recent Impact & Measurable Results</h3>
 
   <div class="results-final-grid">
 
@@ -161,7 +170,7 @@
 </section>
 
 <section class="section contact">
-    <h3 class="section-title">Contact</h3>
+    <h3 class="section-title">// Contact</h3>
     <p>Email: pjourdan8@live.com</p>
     <p>LinkedIn: linkedin.com/in/philippejourdan</p>
     <p>Location: Benelux | Fully Mobile | EU citizenship </p>
@@ -170,6 +179,18 @@
 <footer>
     <p>© 2026 Philippe Jourdan</p>
 </footer>
+
+<script>
+  const burger = document.getElementById('burger');
+  const nav    = document.getElementById('nav');
+  burger.addEventListener('click', () => nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.querySelectorAll('a').forEach(l => l.classList.remove('active'));
+    a.classList.add('active');
+    nav.classList.remove('open');
+  }));
+</script>
+
 
 </body>
 </html>
