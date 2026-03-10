@@ -694,19 +694,26 @@
     }
   });
 
-  function checkHash() {
-    const hash = window.location.hash.replace('#', '');
-    if (hash) {
-      const el = document.getElementById(hash);
-      if (el && el.classList.contains('modal-overlay')) {
-        openModal(hash);
-      }
+ function checkHash() {
+  // Hash classique
+  const hash = window.location.hash.replace('#', '');
+  if (hash) {
+    const el = document.getElementById(hash);
+    if (el && el.classList.contains('modal-overlay')) {
+      openModal(hash); return;
     }
   }
-
+  // Paramètre URL (?modal=mapping)
+  const params = new URLSearchParams(window.location.search);
+  const modal = params.get('modal');
+  if (modal) {
+    const el = document.getElementById('modal-' + modal);
+    if (el && el.classList.contains('modal-overlay')) {
+      openModal('modal-' + modal);
+    }
+  }
+}
 window.addEventListener('load', () => setTimeout(checkHash, 150));
 window.addEventListener('hashchange', checkHash);
 
 </script>
-</body>
-</html>
