@@ -232,7 +232,6 @@
     }
     .modal-overlay.open .modal { transform: translateY(0) scale(1); }
 
-    /* sticky top accent line */
     .modal::before {
       content: ''; position: sticky; top: 0; left: 0; right: 0;
       display: block; height: 2px;
@@ -280,10 +279,8 @@
     }
     .modal-body ul li::before { content: '▸'; position: absolute; left: 0; color: var(--primary-neon); font-size: .6rem; top: .45rem; }
 
-    /* image */
     .modal-img { width: 100%; margin: 1.2rem 0; border: 1px solid var(--border); display: block; }
 
-    /* image placeholder */
     .modal-img-placeholder {
       width: 100%; aspect-ratio: 16/7; margin: 1.2rem 0;
       background: linear-gradient(135deg, rgba(179,0,255,.08), rgba(0,240,255,.06));
@@ -294,14 +291,12 @@
     }
     .modal-img-placeholder span { font-size: 2rem; }
 
-    /* video embed */
     .modal-video {
       position: relative; width: 100%; aspect-ratio: 16/9;
       margin: 1.2rem 0; border: 1px solid var(--border); overflow: hidden;
     }
     .modal-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
 
-    /* video placeholder */
     .modal-video-placeholder {
       width: 100%; aspect-ratio: 16/9; margin: 1.2rem 0;
       background: linear-gradient(135deg, rgba(179,0,255,.1), rgba(0,240,255,.07));
@@ -319,7 +314,6 @@
     .modal-video-placeholder:hover .play-btn { box-shadow: 0 0 25px rgba(0,240,255,.4); }
     .video-label { font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; }
 
-    /* code block */
     .code-block {
       background: #060d1f; margin: 1.2rem 0;
       border: 1px solid var(--border); border-left: 2px solid var(--primary-neon);
@@ -342,7 +336,6 @@
     .code-block .cm  { color: rgba(255,255,255,.3); font-style: italic; }
     .code-block .nb  { color: #ffaa44; }
 
-    /* external links */
     .btn-external {
       display: inline-flex; align-items: center; gap: .5rem;
       font-family: 'Source Code Pro', monospace;
@@ -381,76 +374,76 @@
     <a href="web3-area.html" class="active">Web3 Area</a>
     <a href="recruitment-insights.html">Recruitment Insights</a>
   </nav>
-  <div class="status"><div class="dot"></div>Open to opportunities</div>
+  <div class="status"><div class="dot"></div>Open to Web3 opportunities</div>
 </header>
 
 <section class="hero">
   <div class="hero-tag">// Blockchain & Decentralized Ecosystems</div>
   <h1>Web3 <span>&</span> Blockchain</h1>
-  <p>Exploration de l'écosystème décentralisé — certifications, dApp prototype, veille et positionnement au croisement du recrutement tech et de la blockchain.</p>
+  <p>Exploring decentralized ecosystems through certification, prototype building, market research, and a positioning at the intersection of tech recruitment and blockchain.</p>
   <div class="hex-deco">
     <div class="hex">EVM Compatible</div>
     <div class="hex">Smart Contracts</div>
     <div class="hex">DeFi</div>
-    <div class="hex">NFT & DAOs</div>
+    <div class="hex">NFTs & DAOs</div>
     <div class="hex">Web3 Recruiting</div>
   </div>
 </section>
 
 <div class="page">
 
-  <!-- ── CERTIF ── -->
+  <!-- ── CERTIFICATION ── -->
   <div class="section-label">// Credentials</div>
-  <div class="section-title">Certification & Formation</div>
+  <div class="section-title">Certification & Training</div>
 
   <div class="certif">
     <div class="certif-icon">◈</div>
     <div class="certif-text">
       <h3>Alyra — Blockchain & Web3</h3>
-      <p>Certification RS6410 — Formation complète sur les fondamentaux blockchain, Solidity, smart contracts EVM, DeFi et écosystème décentralisé. Projet de fin de formation : dApp prototype avec token ERC-20.</p>
+      <p>State-recognized certification (RS6410) covering blockchain fundamentals, Solidity, EVM smart contracts, DeFi, and decentralized ecosystems. Final project: a dApp prototype featuring an ERC-20 token.</p>
     </div>
-    <div class="certif-badge"><span class="badge badge-green">Certifié ✓</span></div>
+    <div class="certif-badge"><span class="badge badge-green">Certified ✓</span></div>
   </div>
 
-  <!-- ── PROJETS ── -->
+  <!-- ── PROJECTS ── -->
   <div class="section-label">// Build</div>
-  <div class="section-title">Projets & Prototypes</div>
+  <div class="section-title">Projects & Prototypes</div>
 
   <div class="cards">
 
-    <!-- CARTE 1 — dApp -->
+    <!-- CARD 1 — dApp -->
     <div class="card" onclick="openModal('modal-dapp')">
       <div class="card-icon">◈</div>
-      <div class="card-tag">// Projet · Code · Liens</div>
-      <h3>Certification dApp — Alyra</h3>
-      <p>Smart contract Solidity, token ERC-20 et interface Web3 déployés sur testnet EVM dans le cadre de la certification Alyra RS6410.</p>
+      <div class="card-tag">// Project · Code · Links</div>
+      <h3>Alyra Certification dApp</h3>
+      <p>A Solidity smart contract, ERC-20 token, and Web3 interface built on an EVM testnet as part of the Alyra RS6410 certification project.</p>
       <div class="card-footer">
-        <span class="read-more">Voir le projet</span>
-        <span class="badge badge-green">Projet + Code</span>
+        <span class="read-more">View project</span>
+        <span class="badge badge-green">Project + Code</span>
       </div>
     </div>
 
-    <!-- CARTE 2 — Protocol -->
+    <!-- CARD 2 — Protocol -->
     <div class="card" onclick="openModal('modal-protocol')">
       <div class="card-icon">◎</div>
       <div class="card-tag">// Concept · Article</div>
       <h3>Web3 Talent Protocol</h3>
-      <p>Réflexion sur un protocole décentralisé de vérification de compétences — credentials on-chain, smart CV et DAO hiring au croisement du recrutement et de la blockchain.</p>
+      <p>A concept exploring decentralized skill verification through on-chain credentials, smart CVs, and DAO-native hiring at the crossroads of recruitment and blockchain.</p>
       <div class="card-footer">
-        <span class="read-more">Lire le concept</span>
+        <span class="read-more">Read concept</span>
         <span class="badge badge-purple">Concept + Article</span>
       </div>
     </div>
 
-    <!-- CARTE 3 — Ecosystem Mapping -->
+    <!-- CARD 3 — Ecosystem Mapping -->
     <div class="card" onclick="openModal('modal-mapping')">
       <div class="card-icon">◆</div>
-      <div class="card-tag">// Veille · Recherche</div>
-      <h3>Ecosystem Mapping Web3</h3>
-      <p>Cartographie active des acteurs Web3 — DeFi, NFT studios, DAOs, L2s. Identification des besoins RH spécifiques et des profils les plus demandés dans l'écosystème décentralisé.</p>
+      <div class="card-tag">// Research · Market Mapping</div>
+      <h3>Web3 Ecosystem Mapping</h3>
+      <p>Ongoing mapping of Web3 players across DeFi, NFTs, DAOs, and Layer 2 ecosystems, with a focus on hiring needs and the most in-demand profiles.</p>
       <div class="card-footer">
-        <span class="read-more">Voir la veille</span>
-        <span class="badge badge-cyan">Veille + Mapping</span>
+        <span class="read-more">View research</span>
+        <span class="badge badge-cyan">Research + Mapping</span>
       </div>
     </div>
 
@@ -458,11 +451,11 @@
 
   <!-- ── INSIGHTS ── -->
   <div class="section-label">// Insights</div>
-  <div class="section-title">Articles & Veille Web3</div>
+  <div class="section-title">Web3 Articles & Insights</div>
 
   <div class="coming-soon">
-    <p>Prochainement</p>
-    <span>Contenus en cours de rédaction</span>
+    <p>Coming soon</p>
+    <span>Content currently in development</span>
   </div>
 
 </div>
@@ -476,25 +469,24 @@
   <div class="modal">
     <div class="modal-header">
       <div class="modal-header-left">
-        <div class="modal-tag">// Projet · Solidity · EVM</div>
-        <h2>Certification dApp — Alyra RS6410</h2>
+        <div class="modal-tag">// Project · Solidity · EVM</div>
+        <h2>Alyra Certification dApp — RS6410</h2>
       </div>
       <button class="modal-close" onclick="closeModal('modal-dapp')">✕</button>
     </div>
     <div class="modal-meta">
-      <span>Projet de certification</span>
+      <span>Certification project</span>
       <span>EVM · Solidity · Web3.js</span>
-      <span class="badge badge-green">En cours</span>
+      <span class="badge badge-green">In Progress</span>
     </div>
     <div class="modal-body">
 
-      <h3>Contexte du projet</h3>
-      <p>Dans le cadre de la certification Alyra Blockchain & Web3 (RS6410), développement d'une dApp fonctionnelle sur une blockchain EVM-compatible intégrant un token ERC-20 et une interface utilisateur Web3.</p>
+      <h3>Project Overview</h3>
+      <p>As part of the Alyra Blockchain & Web3 certification (RS6410), this project consists of building a functional dApp on an EVM-compatible blockchain, including an ERC-20 token and a Web3 user interface.</p>
 
-      <!-- Screenshot dApp — remplacer quand disponible -->
       <div class="modal-img-placeholder">
         <span>🖼</span>
-        <div>Screenshot de la dApp — remplacer par :<br><code style="font-size:.65rem; color:var(--primary-neon)">&lt;img src="assets/dapp-screenshot.jpg" class="modal-img"/&gt;</code></div>
+        <div>dApp screenshot — replace with:<br><code style="font-size:.65rem; color:var(--primary-neon)">&lt;img src="assets/dapp-screenshot.jpg" class="modal-img"/&gt;</code></div>
       </div>
 
       <h3>Smart Contract — ERC-20</h3>
@@ -518,29 +510,29 @@
 }</pre>
       </div>
 
-      <h3>Stack technique</h3>
+      <h3>Tech Stack</h3>
       <ul>
-        <li>Solidity — smart contract ERC-20 et logique métier</li>
-        <li>Hardhat — environnement de développement et tests unitaires</li>
-        <li>Ethers.js — interaction frontend ↔ blockchain</li>
-        <li>MetaMask — wallet et signature des transactions</li>
-        <li>React — interface utilisateur</li>
-        <li>Testnet Sepolia — déploiement et tests on-chain</li>
+        <li>Solidity — ERC-20 smart contract and core business logic</li>
+        <li>Hardhat — development environment and unit testing</li>
+        <li>Ethers.js — frontend to blockchain interactions</li>
+        <li>MetaMask — wallet connection and transaction signing</li>
+        <li>React — user interface</li>
+        <li>Sepolia testnet — deployment and on-chain testing</li>
       </ul>
 
-      <h3>Fonctionnalités</h3>
+      <h3>Key Features</h3>
       <ul>
-        <li>Déploiement de token ERC-20 sur testnet Sepolia</li>
-        <li>Interface de transfert et consultation de solde</li>
-        <li>Connexion wallet via MetaMask</li>
-        <li>Événements on-chain tracés en temps réel</li>
+        <li>ERC-20 token deployed on Sepolia testnet</li>
+        <li>Balance tracking and token transfer interface</li>
+        <li>Wallet connection through MetaMask</li>
+        <li>Real-time interaction with on-chain events</li>
       </ul>
 
-      <!-- Décommenter et remplir quand les liens sont disponibles -->
+      <!-- Uncomment and fill in when links are available -->
       <!--
       <div class="modal-links">
-        <a class="btn-external" href="https://github.com/..." target="_blank">Voir sur GitHub →</a>
-        <a class="btn-external purple" href="https://sepolia.etherscan.io/..." target="_blank">Voir sur Etherscan →</a>
+        <a class="btn-external" href="https://github.com/..." target="_blank">View on GitHub →</a>
+        <a class="btn-external purple" href="https://sepolia.etherscan.io/..." target="_blank">View on Etherscan →</a>
       </div>
       -->
 
@@ -560,43 +552,42 @@
   <div class="modal">
     <div class="modal-header">
       <div class="modal-header-left">
-        <div class="modal-tag">// Concept · DID · DAO · Recrutement</div>
+        <div class="modal-tag">// Concept · DID · DAO · Recruitment</div>
         <h2>Web3 Talent Protocol</h2>
       </div>
       <button class="modal-close" onclick="closeModal('modal-protocol')">✕</button>
     </div>
     <div class="modal-meta">
-      <span>Concept · Idéation</span>
+      <span>Concept development</span>
       <span>DID · DAO · Smart CV</span>
-      <span class="badge badge-purple">Idéation</span>
+      <span class="badge badge-purple">Concept</span>
     </div>
     <div class="modal-body">
 
-      <h3>Le problème</h3>
-      <p>Le CV traditionnel est un document centralisé, falsifiable et statique. Dans un écosystème Web3 où les contributions sont publiques, vérifiables et immuables on-chain, il existe une opportunité radicale : remplacer le CV par des credentials décentralisés.</p>
+      <h3>The Problem</h3>
+      <p>The traditional CV is centralized, static, and easy to misrepresent. In Web3, where contributions can be public, verifiable, and immutable, there is a clear opportunity to rethink professional identity through decentralized credentials.</p>
 
-      <!-- Image concept — remplacer quand disponible -->
       <div class="modal-img-placeholder">
         <span>🖼</span>
-        <div>Schéma du protocole — à ajouter</div>
+        <div>Protocol diagram — to be added</div>
       </div>
 
-      <h3>Les 3 couches du protocole</h3>
+      <h3>The Three Layers of the Protocol</h3>
       <ul>
-        <li><strong style="color:var(--primary-neon)">Identité</strong> — Decentralized Identifiers (DID) : identité professionnelle auto-souveraine, non liée à une plateforme</li>
-        <li><strong style="color:var(--primary-neon)">Vérification</strong> — Smart contracts signés par l'employeur on-chain : expériences et compétences vérifiables sans intermédiaire</li>
-        <li><strong style="color:var(--primary-neon)">Réputation</strong> — Système de score DAO basé sur les contributions open-source, audits et participations à des protocoles</li>
+        <li><strong style="color:var(--primary-neon)">Identity</strong> — Decentralized Identifiers (DID) enabling self-sovereign professional identity beyond any single platform</li>
+        <li><strong style="color:var(--primary-neon)">Verification</strong> — Employer-signed smart contracts enabling verifiable experience and skills without third-party validation</li>
+        <li><strong style="color:var(--primary-neon)">Reputation</strong> — A DAO-based reputation layer built on open-source contributions, audits, governance activity, and protocol participation</li>
       </ul>
 
-      <h3>Cas d'usage concret</h3>
-      <p>Une DAO qui recrute un Solidity Developer pourrait vérifier en quelques secondes ses contributions GitHub, ses déploiements on-chain et sa réputation dans d'autres DAOs — sans intermédiaire RH, sans CV falsifiable, sans processus opaque.</p>
+      <h3>Practical Use Case</h3>
+      <p>A DAO hiring a Solidity developer could assess GitHub contributions, on-chain deployments, governance participation, and community reputation within minutes, without relying on a static resume or a conventional hiring funnel.</p>
 
-      <h3>Pourquoi c'est pertinent maintenant</h3>
+      <h3>Why It Matters Now</h3>
       <ul>
-        <li>L'écosystème Web3 recrute nativement sur Discord, GitHub et Snapshot — pas sur LinkedIn</li>
-        <li>Les profils Web3 ont déjà une empreinte on-chain publique et vérifiable</li>
-        <li>Les DAOs ont besoin de systèmes de recrutement compatibles avec leur gouvernance décentralisée</li>
-        <li>L'identité décentralisée (DID / ERC-725) est en voie de standardisation</li>
+        <li>Web3 talent is often identified on Discord, GitHub, and governance platforms rather than on LinkedIn</li>
+        <li>Many Web3 profiles already leave a public and verifiable on-chain footprint</li>
+        <li>DAOs need hiring models that match decentralized governance structures</li>
+        <li>Decentralized identity standards are becoming increasingly relevant across the ecosystem</li>
       </ul>
 
       <div class="modal-tags">
@@ -615,45 +606,45 @@
   <div class="modal">
     <div class="modal-header">
       <div class="modal-header-left">
-        <div class="modal-tag">// Veille · Marché · Recrutement Web3</div>
-        <h2>Ecosystem Mapping Web3</h2>
+        <div class="modal-tag">// Research · Market · Web3 Recruitment</div>
+        <h2>Web3 Ecosystem Mapping</h2>
       </div>
       <button class="modal-close" onclick="closeModal('modal-mapping')">✕</button>
     </div>
     <div class="modal-meta">
-      <span>Veille active</span>
+      <span>Active research</span>
       <span>Research · Mapping</span>
-      <span class="badge badge-cyan">Actif</span>
+      <span class="badge badge-cyan">Active</span>
     </div>
     <div class="modal-body">
 
-      <h3>Objectif</h3>
-      <p>Cartographier les acteurs Web3 sous l'angle recrutement : pour chaque segment (DeFi, NFT, L2s, DAOs, GameFi), identifier les profils les plus recherchés, les niveaux de rémunération, et les canaux de sourcing spécifiques à l'écosystème décentralisé.</p>
+      <h3>Objective</h3>
+      <p>Map the Web3 ecosystem through a recruitment lens by identifying the most in-demand roles, compensation trends, and sourcing channels across DeFi, NFTs, Layer 2, infrastructure, and DAO environments.</p>
 
-      <h3>Segments analysés</h3>
+      <h3>Segments Covered</h3>
       <ul>
-        <li><strong style="color:var(--primary-neon)">DeFi</strong> — Uniswap, Aave, Curve, Lido : Solidity Devs, Protocol Engineers, Security Auditors</li>
-        <li><strong style="color:var(--primary-neon)">L2 & Infrastructure</strong> — Arbitrum, Optimism, zkSync : ZK Engineers, Core Devs, DevRel</li>
-        <li><strong style="color:var(--primary-neon)">NFT & GameFi</strong> — Studios NFT, Axie, Immutable : Full Stack Web3, Smart Contract Devs</li>
-        <li><strong style="color:var(--primary-neon)">DAOs</strong> — MakerDAO, Compound, ENS : Contributors polyvalents, Governance Analysts</li>
-        <li><strong style="color:var(--primary-neon)">Infrastructure</strong> — Alchemy, Infura, The Graph : API Engineers, Indexers</li>
+        <li><strong style="color:var(--primary-neon)">DeFi</strong> — Uniswap, Aave, Curve, Lido: Solidity Developers, Protocol Engineers, Security Auditors</li>
+        <li><strong style="color:var(--primary-neon)">Layer 2 & Infrastructure</strong> — Arbitrum, Optimism, zkSync: ZK Engineers, Core Developers, DevRel profiles</li>
+        <li><strong style="color:var(--primary-neon)">NFT & GameFi</strong> — NFT studios, gaming projects, ecosystem builders: Full-Stack Web3 and Smart Contract Developers</li>
+        <li><strong style="color:var(--primary-neon)">DAOs</strong> — MakerDAO, Compound, ENS: multi-skilled contributors, governance analysts, and ecosystem operators</li>
+        <li><strong style="color:var(--primary-neon)">Infrastructure</strong> — Alchemy, Infura, The Graph: API Engineers, Indexing Specialists, Dev Tooling profiles</li>
       </ul>
 
-      <h3>Canaux de sourcing Web3</h3>
+      <h3>Web3 Sourcing Channels</h3>
       <ul>
-        <li>Discord — serveurs de protocoles et communautés de développeurs</li>
-        <li>GitHub — contributions open-source, profils actifs sur projets EVM</li>
-        <li>Twitter/X — threads techniques, participation aux débats de gouvernance</li>
-        <li>Snapshot — votes de gouvernance DAO, identification des contributors actifs</li>
-        <li>Etherscan / Dune Analytics — activité on-chain comme signal de compétence</li>
+        <li>Discord — protocol servers and technical communities</li>
+        <li>GitHub — open-source contributions and code activity</li>
+        <li>X / Twitter — technical threads, ecosystem visibility, governance discussions</li>
+        <li>Snapshot — DAO voting history and contributor activity</li>
+        <li>Etherscan and Dune — on-chain behavior as a signal of technical engagement</li>
       </ul>
 
-      <h3>Insight clé</h3>
-      <p>Les meilleurs profils Web3 ne sont jamais en recherche active. Ils contribuent à des protocoles, participent à des hackathons et vivent dans des communautés Discord. La valeur ajoutée d'un recruteur Web3 est précisément d'aller les chercher là où ils sont — pas sur LinkedIn.</p>
+      <h3>Key Insight</h3>
+      <p>The strongest Web3 candidates are rarely visible through traditional hiring channels. They contribute to protocols, join hackathons, participate in governance, and build in public. A Web3 recruiter creates value by identifying talent where that talent actually operates, inside the ecosystem itself.</p>
 
       <div class="modal-tags">
         <span class="badge badge-cyan">DeFi</span>
-        <span class="badge badge-cyan">L2 Networks</span>
+        <span class="badge badge-cyan">Layer 2</span>
         <span class="badge badge-purple">DAOs</span>
         <span class="badge badge-purple">NFT Studios</span>
         <span class="badge badge-green">GameFi</span>
@@ -666,11 +657,14 @@
 <script>
   // ── Nav burger ──
   const burger = document.getElementById('burger');
-  const nav    = document.getElementById('nav');
+  const nav = document.getElementById('nav');
+
   burger.addEventListener('click', () => nav.classList.toggle('open'));
+
   nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     nav.querySelectorAll('a').forEach(l => l.classList.remove('active'));
-    a.classList.add('active'); nav.classList.remove('open');
+    a.classList.add('active');
+    nav.classList.remove('open');
   }));
 
   // ── Modal ──
@@ -678,13 +672,16 @@
     document.getElementById(id).classList.add('open');
     document.body.style.overflow = 'hidden';
   }
+
   function closeModal(id) {
     document.getElementById(id).classList.remove('open');
     document.body.style.overflow = '';
   }
+
   function closeOnOverlay(e, id) {
     if (e.target === document.getElementById(id)) closeModal(id);
   }
+
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
       document.querySelectorAll('.modal-overlay.open').forEach(m => {
@@ -694,26 +691,29 @@
     }
   });
 
- function checkHash() {
-  // Hash classique
-  const hash = window.location.hash.replace('#', '');
-  if (hash) {
-    const el = document.getElementById(hash);
-    if (el && el.classList.contains('modal-overlay')) {
-      openModal(hash); return;
+  function checkHash() {
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      const el = document.getElementById(hash);
+      if (el && el.classList.contains('modal-overlay')) {
+        openModal(hash);
+        return;
+      }
     }
-  }
-  // Paramètre URL (?modal=mapping)
-  const params = new URLSearchParams(window.location.search);
-  const modal = params.get('modal');
-  if (modal) {
-    const el = document.getElementById('modal-' + modal);
-    if (el && el.classList.contains('modal-overlay')) {
-      openModal('modal-' + modal);
-    }
-  }
-}
-window.addEventListener('load', () => setTimeout(checkHash, 150));
-window.addEventListener('hashchange', checkHash);
 
+    const params = new URLSearchParams(window.location.search);
+    const modal = params.get('modal');
+    if (modal) {
+      const el = document.getElementById('modal-' + modal);
+      if (el && el.classList.contains('modal-overlay')) {
+        openModal('modal-' + modal);
+      }
+    }
+  }
+
+  window.addEventListener('load', () => setTimeout(checkHash, 150));
+  window.addEventListener('hashchange', checkHash);
 </script>
+
+</body>
+</html>
